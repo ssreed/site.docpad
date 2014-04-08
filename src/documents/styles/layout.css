@@ -54,7 +54,7 @@ a {
 
 .container {
   margin-top: 1em;
-  width: 70%;
+  /*width: 70%;*/
   min-width: 550px;
 }
 
@@ -92,7 +92,7 @@ footer {
 	margin: 0 auto;
 	text-align: center;
   padding: 4em;
-  width: 70%;
+  /*width: 70%;*/
   min-width: 550px;
 }
 
