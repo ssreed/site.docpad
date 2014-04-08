@@ -1,0 +1,6 @@
+## DocPad
+/node_modules
+/out
+
+## OSX
+.DS_Store

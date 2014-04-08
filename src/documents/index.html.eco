@@ -1,0 +1,10 @@
+---
+title: "Home"
+layout: "home"
+isPage: true
+navOrder: 1
+---
+
+<p class="intro">
+Hi, my name is Sri. Thanks for stopping by. Please feel free to look at my projects or read my thoughts on life.
+</p>

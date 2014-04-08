@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title><%= @getPreparedTitle() %></title>
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").add(["","/styles/skeleton.css","/styles/layout.css"]).toHTML() %>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container">
+        <!-- navigation -->
+        <nav class="main-nav">
+            <ul>
+            <% for page in @getCollection("pages").toJSON(): %>
+            <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+                <a href="<%= page.url %>">
+                    <%= page.title %>
+                </a>
+            </li>
+            <% end %>
+            </ul>
+        </nav>
+        <%- @content %>
+    </div>
+    <footer>
+            <a href="www.twitter.com/ssreed">
+               <span class="twitter"></span> 
+            </a> 
+            <a href="mailto:srisreed@gmail.com">
+               <span class="gmail"></span>            
+            </a>    
+            <a href="www.github.com/ssreed">
+                <span class="github"></span>
+            </a>
+    </footer>
+    <%- @getBlock("scripts").add(["/vendor/jquery.min.js","/scripts/app.js"]).toHTML() %>
+</body>
+</html>

@@ -1,0 +1,19 @@
+---
+title: "Posts"
+layout: "default"
+isPage: true
+navOrder: 2
+---
+
+<div class="posts">
+    <% for post in @getCollection("posts").toJSON(): %>
+    <ul>
+    <li class="<%= if post.id is @document.id then 'active' else 'inactive' %>">
+    <%= @postDate(post.date, 'DD MMMM YYYY') %> »
+    <a href="<%= post.url %>">
+        <%= post.title %>
+    </a>
+    </li>
+    </ul>
+    <% end %>
+</div>
