@@ -23,13 +23,13 @@
         <%- @content %>
     </div>
     <footer>
-            <a href="www.twitter.com/ssreed">
+            <a href="http://www.twitter.com/ssreed">
                <span class="twitter"></span> 
             </a> 
-            <a href="mailto:srisreed@gmail.com">
+            <a href="mailto:srisreed@gmail.com?Subject=Hello">
                <span class="gmail"></span>            
             </a>    
-            <a href="www.github.com/ssreed">
+            <a href="http://www.github.com/ssreed">
                 <span class="github"></span>
             </a>
     </footer>
